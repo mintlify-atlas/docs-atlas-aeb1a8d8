@@ -1,0 +1,166 @@
+{
+  "projectType": "saas",
+  "projectName": "OpenPanel",
+  "projectDescription": "An open-source, privacy-first web and product analytics platform — a self-hostable alternative to Mixpanel with real-time dashboards, funnels, session replay, and multi-platform SDKs.",
+  "theme": "palm",
+  "primaryColor": "#848484",
+  "lightColor": "#101010",
+  "darkColor": "#c1c1c1",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction"]
+          },
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/install-openpanel",
+              "get-started/track-events",
+              "get-started/identify-users"
+            ]
+          },
+          {
+            "group": "Tracking",
+            "pages": [
+              "tracking/how-it-works",
+              "tracking/revenue-tracking",
+              "tracking/session-replay",
+              "tracking/consent-management",
+              "tracking/adblockers"
+            ]
+          },
+          {
+            "group": "Dashboard",
+            "pages": [
+              "dashboard/understand-the-overview",
+              "dashboard/notifications-and-integrations"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "self-hosting/overview",
+              "self-hosting/deploy-docker-compose",
+              "self-hosting/deploy-coolify",
+              "self-hosting/deploy-dokploy",
+              "self-hosting/deploy-kubernetes",
+              "self-hosting/environment-variables",
+              "self-hosting/migrating-from-clerk",
+              "self-hosting/supporter-access",
+              "self-hosting/changelog"
+            ]
+          },
+          {
+            "group": "Migration",
+            "pages": [
+              "migration/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDKs",
+        "groups": [
+          {
+            "group": "Web",
+            "pages": [
+              "sdks/overview",
+              "sdks/script",
+              "sdks/javascript",
+              "sdks/web"
+            ]
+          },
+          {
+            "group": "Frameworks",
+            "pages": [
+              "sdks/nextjs",
+              "sdks/react",
+              "sdks/nuxt",
+              "sdks/vue",
+              "sdks/astro",
+              "sdks/remix",
+              "sdks/express"
+            ]
+          },
+          {
+            "group": "Mobile",
+            "pages": [
+              "sdks/react-native",
+              "sdks/swift",
+              "sdks/kotlin"
+            ]
+          },
+          {
+            "group": "Backend",
+            "pages": [
+              "sdks/python",
+              "sdks/ruby",
+              "sdks/rust"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/track",
+              "api/export",
+              "api/insights"
+            ]
+          },
+          {
+            "group": "Manage",
+            "pages": [
+              "api/manage/overview",
+              "api/manage/projects",
+              "api/manage/clients",
+              "api/manage/references"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time analytics dashboards with live data updates",
+    "Session replay with privacy controls",
+    "Funnels, cohorts, and user profile tracking",
+    "A/B testing with variant breakdowns",
+    "Event and funnel-based smart notifications",
+    "Cookieless tracking and GDPR compliance",
+    "Self-hosting with Docker Compose, Coolify, Dokploy, and Kubernetes",
+    "Multi-platform SDKs: Web, Next.js, React, Vue, Nuxt, Astro, React Native, Swift, Kotlin, Python, Ruby, Rust",
+    "Revenue tracking",
+    "Open-source under AGPL-3.0"
+  ],
+  "publicApiSurface": [
+    "POST /track — Track events, identify users, increment/decrement profile properties",
+    "GET /track/device-id — Retrieve device and session identifiers",
+    "GET /export — Export raw event data",
+    "GET /insights — Query aggregated analytics data",
+    "GET/POST /manage/projects — Manage projects",
+    "GET/POST /manage/clients — Manage API clients",
+    "GET /manage/references — Retrieve event/property references",
+    "OpenPanel.track(name, properties) — SDK method",
+    "OpenPanel.identify(payload) — SDK method",
+    "OpenPanel.increment(payload) — SDK method",
+    "OpenPanel.decrement(payload) — SDK method",
+    "OpenPanel.revenue(amount, properties) — SDK method",
+    "OpenPanel.setGlobalProperties(properties) — SDK method",
+    "OpenPanel.ready() — SDK method to flush queued events",
+    "useOpenPanel() — React/Next.js hook"
+  ]
+}
